@@ -23,7 +23,9 @@
                     home-manager.useUserPackages = true;
                     users.users.user = {
                         isNormalUser = true;
-                        imports = [];
+                        imports = [
+                            ./common/zsh
+                        ];
                     };
                 }
             ];
