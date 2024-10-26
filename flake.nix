@@ -18,11 +18,11 @@
             specialArgs = { inherit inputs; };
 
             modules = [
+                ./system/configuration.nix
                 home-manager.nixosModules.home-manager {
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
-                    users.users.user = {
-                        isNormalUser = true;
+                    home-manager.users.user = {
                         imports = [
                             ./home.nix
                         ];
