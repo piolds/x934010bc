@@ -25,6 +25,8 @@
                         isNormalUser = true;
                         imports = [
                             ./common/zsh
+                            ./specific/configuration.nix
+                            ./specific/hardware-configuration.nix
                         ];
                     };
                 }
